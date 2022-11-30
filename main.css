@@ -19,7 +19,7 @@ header {
 nav a {
     color: steelblue;
     font-size: 28pt;
-    text-decoration:solid;
+    text-decoration:none;
 }
 
 nav ul {
@@ -27,6 +27,8 @@ nav ul {
     position: absolute;
     top: 0.7rem;
     right: 1rem;
+    display: flex;
+    flex-direction: row;
 }
 
 nav li {
@@ -42,6 +44,7 @@ main {
 main section {
     margin-top: 5rem;
     padding: 2rem;
+    margin-bottom: 5rem;
 }
 
 .home img {
@@ -50,11 +53,15 @@ main section {
     width: 400px;
 }
 
+.about text {
+    position: inherit;
+}
+
 footer {
     text-align: center;
     background-color: blanchedalmond;
     padding: 3rem;
-    position: fixed;
+    position: sticky;
     width: 100%;
     left: 0;
     bottom: 0;
